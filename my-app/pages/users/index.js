@@ -6,7 +6,7 @@ const UserList = () => {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const response = await fetch("/api/user");
+      const response = await fetch("/api/users");
       const users = await response.json();
       setUsers(users);
     };
